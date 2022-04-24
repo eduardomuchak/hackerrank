@@ -1,18 +1,19 @@
 function staircase(n) {
-  let string = '';
-  for (let index = 0; index < n; index++) {
-    let space = '';
-    for (let index2 = 0; index2 < n - index - 1; index2++) {
-      space += ' ';
+  let line = '';
+  let position = n - 1;
+
+  for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+    for (let columnIndex = 0; columnIndex < n; columnIndex += 1) {
+      if (columnIndex < position) {
+        line += ' ';
+      } else {
+        line += '#';
+      }
     }
-    let hash = '';
-    for (let index3 = 0; index3 < index + 1; index3++) {
-      hash += '#';
-    }
-    // "\n" is the new line character
-    string += space + hash + '\n';
+    position -= 1;
+    console.log(line);
+    line = '';
   }
-  return string;
 }
 
-console.log(staircase(6));
+staircase(6);
