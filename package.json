@@ -1,5 +1,26 @@
 {
-  "dependencies": {
-    "eslint": "^8.14.0"
+  "dependencies": {},
+  "name": "hackerrank",
+  "description": "This repository contains my submissions to hackerrank.",
+  "version": "1.0.0",
+  "main": "01 - Solve Me First.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardomuchak/hackerrank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardomuchak/hackerrank/issues"
+  },
+  "homepage": "https://github.com/eduardomuchak/hackerrank#readme",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
